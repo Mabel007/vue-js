@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <div class="m-3 p-5">
+    <div class="p-5">
       <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600" @click="increment">
     +
   </button>
@@ -13,7 +13,7 @@
   <h3>{{ message.toUpperCase() }}</h3>
   <h2>{{ message.repeat(3) }}</h2>
   <h2>{{ message + 'AltSchool'.toUpperCase() }}</h2>
-  <div>Current time: {{ formatDate(newDate()) }}</div>
+  <div>Current time: {{ formatDate(new Date()) }}</div>
   </div>
 
 </template>
